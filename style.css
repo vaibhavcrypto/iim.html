@@ -1,0 +1,136 @@
+
+    :root {
+      --spotify-green: #1db954;
+      --bg-dark: #121212;
+      --bg-darker: #000;
+      --text-light: #ffffff;
+      --sidebar-width: 250px;
+    }
+    body {
+      margin: 0;
+      background-color: var(--bg-dark);
+      color: var(--text-light);
+      font-family: 'Helvetica Neue', sans-serif;
+    }
+    .spotify-container {
+      display: grid;
+      grid-template-columns: var(--sidebar-width) 1fr;
+      grid-template-rows: auto 1fr auto;
+      height:800px;
+    }
+    .sidebar {
+      grid-row: 1 / span 3;
+      background-color: var(--bg-darker);
+      padding:16px;
+      display:flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height:200px;
+    }
+    .sidebar a {
+      color: white;
+      text-decoration: none;
+      padding:2px;
+      
+    }
+    .sidebar a:hover {
+      color: var(--spotify-green);
+    }
+    .header {
+      background-color: var(--bg-dark);
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #2a2a2a;
+      
+    }
+    .content {
+      padding: 1rem;
+      overflow-y: auto;
+      background-color: #181818;
+      height:1000
+    }
+    .content::-webkit-scrollbar{
+      display: none;
+    }
+    .content h5 {
+      margin-top: 1.5rem;
+    }
+    .scrolling-row {
+      display: flex;
+      
+      gap: 1rem;
+    }
+    #scroller::-webkit-scrollbar{
+      display: none;
+    }
+    .scrolling-row .card {
+      min-width: 160px;
+      background-color: #282828;
+      border: none;
+    }
+    .scrolling-row .card img {
+      border-radius: 4px;
+    }
+    .mini-player {
+      grid-column: 1 / span 2;
+      background-color: #000;
+      padding: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 1px solid #2a2a2a;
+    }
+    .promo-banner {
+      grid-column: 1 / span 2;
+      background: linear-gradient(to right, #af2896, #509bf5);
+      padding: 1rem;
+      text-align: center;
+      color: white;
+    }
+    .promo-banner .btn {
+      margin-left: 1rem;
+    }
+  #card{
+   height:150px;
+   width:500px;
+   overflow-y: scroll;
+   //border:1px solid;
+   
+  }
+  
+  body {
+  background-color: #121212;
+  color: white;
+  font-family: 'Arial', sans-serif;
+}
+
+.sidebar {
+  background-color: #000;
+  width: 250px;
+  padding: 20px;
+  position: fixed;
+  
+  
+  
+}
+
+
+
+
+
+.scrolling-row {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  padding: 10px 0;
+}
+
+.scrolling-row::-webkit-scrollbar{
+  display: none;
+}
+
+
+
+
